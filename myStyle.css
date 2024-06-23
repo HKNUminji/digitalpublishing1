@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.title-bold{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #333;
+}
+
+.title-normal {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+#scrollToTopBtn {
+  display: none; /* 처음에는 버튼을 숨깁니다 */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.7;
+  z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 300px;
+  line-height: 1; /* 행간*/
+  margin: 0; /* 위아래 여백 */
+  position: relative;
+}
+
+h2 {
+  margin-top: 100px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #333;
+}
+
+h4 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #999999;
+} 
+ 
+
+.img-fit{width: 40%;
+  flex: 0 0 auto; /* 유연하지 않고 크기를 고정 */
+  margin-right: 20px; 
+.img-border{border:10px solid #ffffff; box-sizing: border-box;}
+}
+
+
+.section {
+  padding: 20px;
+}
+
+/* 이미지와 텍스트를 나란히 배치하는 스타일 */
+.img-with-text {
+  margin-top: 10px;
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 20px; /* 이미지와 텍스트 사이의 간격 */
+  line-height: 1.4;
+}
+
+.img-with-text img {
+  max-width: 100%; /* 이미지가 부모 요소를 넘지 않도록 설정 */
+}
+
+
+.circle-container {
+  display: flex;
+  justify-content: space-around; /* 원 사이의 간격을 일정하게 */
+  align-items: center;
+  margin-left: 00px;
+  padding: 20px; /* 컨테이너의 여백 조정 */
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* 원의 너비를 적절히 조정 */
+  height: 30px; /* 원의 높이를 적절히 조정 */
+  background-color: #333;
+  border-radius: 50%;
+  margin-left: 230px;
+}
+
+h3 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+}
+
+.maingp {
+  position: relative;
+}
+
+.maingp div {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 800;
+  top: 142px;
+  left: 350px;
+  color: white; /* 배경색을 필요에 따라 조정하세요 */
+  padding: 5px; /* 필요에 따라 조정하세요 */
+}
+
+.maingp2 {
+  position: relative;
+}
+
+.maingp2 div {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 800;
+  top: 36px;
+  left: 641px;
+  color: white; /* 배경색을 필요에 따라 조정하세요 */
+  padding: 5px; /* 필요에 따라 조정하세요 */
+}
+
+
+html {
+  background-color: #ffffff; /* 기본 배경색 */
+  background-image: linear-gradient(rgb(204, 204, 204) 1px, transparent 1px), 
+                    linear-gradient(90deg,rgb(205, 205, 205) 1px, transparent 1px);
+  background-size: 20px 20px; /* 격자 크기 */
+  height: 100%; /* 전체 높이 적용 */
+}
+
+body {
+  font-family: 'Noto Sans', 'sans-serif';
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.2); /* 반투명 배경 */
+  backdrop-filter: blur(0.1px); /* 블러 효과 추가 */
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* 살짝 투명한 배경색 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
+  backdrop-filter: blur(30px); /* 컨테이너에 살짝 블러 효과 추가 */
+  border-radius: 40px; /* 부드러운 모서리 */
+}
+
+.infographic-container { /* 인포그래픽 시작 */
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  gap: 200px;
+}
+
+.infographic {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.infographic img {
+  width: 50px;
+  height: 50px;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.infographic:hover .tooltip {
+  display: block;
+} /* 인포그래픽 끝 */
+
+.chart-container{
+  background-color: rgba(255, 255, 255, 0.9);
+  position: center;
+  left: 90px;
+  margin: 0px;
+  padding: 10px;
+  scale: 80%;
+}
+
+.chart-container2{
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+
+.header {
+    background-color:rgba (255, 255, 255, 0);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: center;
+    align-items: baseline;
+}
+
+.nav {
+  position: sticky;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* 배경색을 원하는 색상으로 설정하세요 */
+  z-index: 1000; /* 다른 요소 위에 위치하도록 z-index 설정 */
+  top: -2px;
+  overflow: hidden;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul li {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav ul li a {
+  color: rgb(29, 29, 29); /* 링크 텍스트 색상을 원하는 색상으로 설정하세요 */
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  margin: 5px; /* 호버 양옆 여백주기 */
+}
+
+.nav ul li a:hover {
+  background-color: #ffffff; /* 호버 시 배경색을 변경할 수 있습니다 */
+  color: #999999;
+  border-radius: 15px; /* 모서리를 둥글게 */
+  transition: background-color 0.3s ease-in-out;
+  transition-duration: 0.2s;
+  margin: 5px; /* 호버 양옆 여백주기 */
+}
+
+
+.nav ul li.active
+{
+  background-color: #c4c4c4;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 80%;
+}
+  
+  .accordion {
+    background-color: #ffffff;
+    --bs-accordion-border-width: 0px;
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 800px;
+  }
+  
+  .hr-line {
+    border-top: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(90deg, White, DimGrey, White) border-box;
+  }
+  
+  
+  #chartOne {
+    width: 100% !important;
+    height: 380px !important;
+  }
+  
+  #chartTwo {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  #chartThree,
+  #chartFour {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  #chartFive {
+    width: 100%;
+    height: 500px;
+  }
+  
+  #chartSix {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .chart-title {
+    color: DimGrey;
+  }
+  
+  .accordion-button {
+    color: DimGrey;
+    background-color: Whitesmoke !important;
+    border-radius: 0px !important;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: LightSkyBlue !important;
+    color: White !important;
+  }
+  
+  .accordion-button:not(.collapsed):after {
+    filter: invert(100%) brightness(200%);
+  }
+  
+  button p {
+    width: 100%;
+    text-align: center !important;
+  }
+  
+
+
+/* 여기서부터 라인 차트 */
+
+
+  .accordion {
+    --bs-accordion-border-width: 0px;
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 680px;
+  }
+  
+  .hr-line {
+    border-top: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(90deg, White, DimGrey, White) border-box;
+  }
+  
+  .chart-container {
+    position: relative;
+    margin-left: 100px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 290px;
+    min-width: 290px;
+  }
+  
+  #chartOne {
+    width: 100% !important;
+    height: 380px !important;
+  }
+  
+  #chartTwo {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  #chartThree,
+  #chartFour {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  #chartFive {
+    width: 100%;
+    height: 500px;
+  }
+  
+  #chartSix {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .chart-title {
+    color: DimGrey;
+  }
+  
+  .accordion-button {
+    color: DimGrey;
+    background-color: Whitesmoke !important;
+    border-radius: 0px !important;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: LightSkyBlue !important;
+    color: White !important;
+  }
+  
+  .accordion-button:not(.collapsed):after {
+    filter: invert(100%) brightness(200%);
+  }
+  
+  button p {
+    width: 100%;
+    text-align: center !important;
+  }
+  
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
